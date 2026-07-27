@@ -10,17 +10,38 @@
 
     <style>
       body {
-        color: #30363d;
+        color: #24292f;
+      }
+
+      /* Only ordinary body copy is made slightly lighter.
+         Headings, the site title, and bold text retain their original weights. */
+      header p,
+      section p,
+      section li,
+      footer p {
+        font-weight: 390;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #1f252b;
+      }
+      strong,
+      b {
+        color: #1f252b;
       }
       a {
-        color: #1769aa;
+        color: #1677bd;
         text-decoration: none;
       }
       a:visited {
-        color: #1769aa;
+        color: #1677bd;
       }
       a:hover {
-        color: #0f5f9c;
+        color: #0f68a8;
         text-decoration: underline;
       }
       a.site-title,
@@ -36,6 +57,18 @@
       section > h1:first-child {
         margin-top: 0;
         padding-top: 0;
+      }
+
+      /* On wide screens, align the opening paragraph with the site title.
+         The slight downward bias prevents the first line from sitting higher. */
+      @media screen and (min-width: 961px) {
+        section {
+          padding-top: 17px;
+        }
+
+        section > p:first-child {
+          margin-top: 0;
+        }
       }
       section p {
         text-align: left;
@@ -90,19 +123,15 @@
           <a href="https://x.com/timtizhang" target="_blank" rel="noopener noreferrer">X/Twitter</a>]
         </p>
 
-        <p><a href="#research">Research</a><br>
-        <p><a href="#education">Education</a><br>
-        <p><a href="#name">About My Name</a><br>
+        <p><a href="#research">Research</a></p>
+        <p><a href="#education">Education</a></p>
+        <p><a href="#name">About My Name</a></p>
         <p><a href="CV_Tim.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a></p>
       </header>
 
       <section>
 
-        <h1 style="font-weight: 570; font-size: 24px;">
-          Development as Freedom.
-        </h1>
-        
-        <p>Hi! This is Tim, and my full name is pronounced <em>[Tin-ee Jahng]</em>.</p>
+<p>Hi! This is Tim, and my full name is pronounced <em>[Tin-ee Jahng]</em>.</p>
 
         <p>I am a fourth-year undergraduate student majoring in <a href="https://gpa.fss.um.edu.mo/bach_ipa_all_2026/" target="_blank" rel="noopener noreferrer">International and Public Affairs</a> at the <a href="https://www.um.edu.mo/" target="_blank" rel="noopener noreferrer">University of Macau</a>, where I am honored to be supported by the <b>Golden Lotus Full Scholarship</b>. From 2025 to 2027, I also serve as the Head of Academics of the <a href="https://gpa.fss.um.edu.mo/youth-association-for-international-affairs-yaia/" target="_blank" rel="noopener noreferrer">Youth Association of International Affairs</a>.</p>
 
